@@ -1,4 +1,5 @@
 
+    // Slick Slider
 $(document).ready(function(){
     $('.slider').slick({
       arrows:false,
@@ -6,6 +7,8 @@ $(document).ready(function(){
       appendDots:('.slider-dots'),
       dotsClass:'dots'
     });
+
+    // Mobile Nav
 
     let menuIcon= document.querySelector('.menu-icon');
     let closeButton= document.querySelector('.close-button');

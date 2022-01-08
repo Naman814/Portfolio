@@ -176,7 +176,9 @@ transition: all 0.3s ease;
 }
 
 .contact{
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("/images/contactbg.jpg");
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("./src/images/contactbg.jpg");
+    /* background-image:url("/images/contactbg.jpg"); */
+    background-color: black;
     text-align: center;
     clip-path: polygon(0 0 , 100% 0 , 100% 100%, 70% 84% , 0 97%);
 }
