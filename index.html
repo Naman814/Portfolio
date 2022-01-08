@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <button class="menu-icon">
+            <img src="./images/menu-icon.png" alt="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="close-button"><img src="./images/delete.png" alt=""></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+            <nav id="nav-bar" class="flex items-center justify-between">
+                <div class="first flex items-center">
+                    <div class="brand-logo">
+                        <h4>Let's Code</h4>
+                    </div>
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#feedback">Feedback</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="second">
+                    <button class="btn btn-primary">Contact</button>
+                </div>
+            </nav>
+    
+            <div class="profile flex items-center justify-between">
+                <div class="first flex-1 justify-content">
+                    <img src="./profilePic/Namanprofile.png" alt="">
+                </div>
+                <!-- flex-1 is added to uniformly distribute profile and info -->
+                <div class="Second flex-1"> 
+                    <h4>Naman vijay</h4>
+                    <h1>I am a <span>Developer</span></h1>
+                    <p>
+                        A passionate Problem solver and tech enthusiast with keen interest in development , 
+                        currently pursuing my Bachelor of technology in Computer Science.
+                    </p>
+                    <a href="https://drive.google.com/drive/folders/1ADtU5ZRgTRQOl_1YGUdCzbM21BQ97JM_?usp=sharing" target="_blank">
+                        <button class="btn btn-secondary">Download Resume</button></a>
+                </div>
+               
+            </div>
+        </div>
+        </header>
+        <section id="about">
+            <div class="container flex items-center inner-wrap justify-between">
+                <div class="first flex-1">
+                   <img src="./images/aboutimage.jpg" alt="">
+                </div>
+                <div  class="right about-align flex-1">
+                    <h4>About <span>Me</span></h4>
+                    <h2>Hello I'am Naman Vijay</h2>
+                    <p class="about-para">
+                        Hello everyone I am Naman Vijay a programmer and a developer. I am currently in my third year pursuing Bachelor of Technology in 
+                        Computer Science and Technology. I am a problem solver and love to solve new challenges. Currently I am working on MERN stack for my personal projects.
+                        I have worked on Machine learning also.
+                        <p>
+                        Talking about Problem solving, I have solved around 500+ questions on various coding platforms including GeeksForGeeks, LeedCode, Codechef, HackerRank.
+                        </p>
+                    </p>
+                    <div class="social">
+                        <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-envelope"></a>
+                        <a href="https://www.linkedin.com/in/naman-vijay-574758200/" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/Naman814" class="fa fa-github" target="_blank" ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <div class="container">
+                <p class="section-heading">Projects</p>
+                <p>Following are some of my hosted projects/repository links. </p>
+                <div class="wrapper items-center">
+                    <div class="cards">
+                        <p class="card-heading">Tic-Tac-Toe Game</p>
+                        <img class="icon-image" src="./images/number-one.png" alt="">
+                        <p> Game where user who at first marks three column with same symbol is the winner.
+                        </p>
+                        <a href="https://naman814.github.io/React-Hooks-tic_tac_toe/" target="_blank"><button class="btn btn-primary">Link</button></a>
+                        <p>Languges : Html, Css, Reactjs</p>
+                     </div>
+                     <div class="cards">
+                        <p class="card-heading">To-do List</p>
+                        <img class="icon-image" src="./images/number-2.png" alt="">
+                        <p> List for managing your daily tasks, user can add a note as well as delete a note.
+                        </p>
+                        <a href="https://naman814.github.io/Todo-list-App/" target="_blank"><button class="btn btn-primary">Link</button></a>
+                        <p>Languges : Html , Css , Js</p>
+                     </div>
+                     <div class="cards">
+                        <p class="card-heading">Weather Forecast Application</p>
+                        <img class="icon-image" src="./images/number-3.png" alt="">
+                        <p> Tells the Weather forecast of any city/country.
+                        </p>
+                        <a href="https://weather-application-naman.herokuapp.com/" target="_blank"><button class="btn btn-primary">Link</button></a>
+                        <p>Languges : Reactjs , Nodejs</p>
+                     </div>
+                    <div class="cards">
+                       <p class="card-heading">Diabetes Prediction</p>
+                       <img class="icon-image" src="./images/number-four.png" alt="">
+                       <p>Predicts whether a person is suffering from diabetes or not. PIMA dataset is used.
+                       </p>
+                       <a href="https://github.com/Naman814/Diabetes-Prediction" target="_blank"><button class="btn btn-primary">Repo</button></a>
+                       <p>Languges : ML, Python</p>
+                    </div>
+                     <div class="cards">
+                        <p class="card-heading">Blockchain</p>
+                        <img class="icon-image" src="./images/number-5.png" alt="">
+                        <p>Blockchain for securing private information of patients to prevent Data breach.
+    
+                        </p>
+                        <a href="https://github.com/Naman814/Blockchain" target="_blank"><button class="btn btn-primary">Repo</button></a>
+                        <p>Languges : javascript</p>
+                     </div>
+                     <div class="cards">
+                        <p class="card-heading">Food Recepie Application</p>
+                        <img class="icon-image" src="./images/six.png" alt="">
+                        <p>Web Application that displays recepie of any desired food item.
+                        </p>
+                        <a href="https://github.com/Naman814/food-recepie-app" target="_blank"><button class="btn btn-primary">Repo</button></a>
+                        <p>Languges : Html, Css, Reactjs</p>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section  class="contact">
+            <div class="container">
+                <h1>Available For Internships , Freelancing.</h1>
+                <p>Currently available to work so that I can add value to the projects and enhance my skills.</p>
+                <a href="https://drive.google.com/drive/folders/1ADtU5ZRgTRQOl_1YGUdCzbM21BQ97JM_?usp=sharing" target="_blank">
+                    <button class="btn btn-primary">Resume</button></a>
+            </div>
+        </section>
+    
+        <section id="feedback" class="feedback">
+            <div class="container">
+            <h4 class="feedback-heading">FeedBack</h4>
+            <p> </p>
+            <div class="slider">
+                <div class="slide">
+                    <img src="/images/feedback1.jpg" alt="">
+                    <p>When it comes to team work , Naman always stands out. Always dedicated and enthusiastic towards work.</p>
+                    <h5>Aanchal Sharma</h5>
+                </div>
+                <div class="slide">
+                    <img src="/images/feedback2.jpg" alt="">
+                    <p>One of the best colleague to work with. A great problem solver with positive approach to challenges.</p>
+                    <h5>Pankaj Singh</h5>
+                </div>
+            </div>
+            <div class="slider-dots">
+            </div>
+            </div>
+        </section>
+    
+        <section id="contact" class="reach-me">
+            <div class="container">
+                <h2 class="reach-heading">Contact Me</h2>
+                <p>Kindly contant me through below form!</p>
+                <div class="reach-wrapper">
+                    <div class="reach">
+                        <img src="/images/iphone.png" alt="">
+                        <h5>Call Me</h4>
+                        <p>+91-9319382770</p>
+                    </div>
+                    <div class="reach">
+                        <img src="/images/email.png" alt="">
+                        <h5>Email Me</h4>
+                        <p>namanvj23@gmail.com</p>
+                    </div>
+                </div>
+    
+                <!-- <form action=""> -->
+                    <section class="contact-form">
+                            <div class="form-body">
+                                <div class="input-wrapper">
+                                    <input id="from_name" type="text"  placeholder="Name">
+                                    <input id="from_email" type="text"  placeholder="Your Email">
+                                </div>
+                                <div class="text-wrapper">
+                                    <input id="subject" type="text" placeholder="Subject">
+                                    <textarea id="msg" type="text" placeholder="Enter Your Message Here..." rows="10" cols="30"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary" onclick="sendMail()">Send Message</button>
+                    </section>
+                <!-- </form> -->
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <div class="footer-social">
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="fa fa-envelope"></a>
+                    <a href="https://www.linkedin.com/in/naman-vijay-574758200/" target="_blank" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Naman814" target="_blank" class="fa fa-github"></a>
+                </div>
+                <div class="credit">
+                    <span>Made with 💖 By Naman</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Importing slick-slider for carousel -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- Importing js file -->
+<script type="text/javascript" src="/index.js"></script>
+        <!-- Importing smtp for sending emails -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_EYeDmRuX401TSCC46LVwo");
+        })();
+        </script>
+</body>
+</html>

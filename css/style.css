@@ -1,0 +1,555 @@
+@import url("./flexbox.css");
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Giving variable names to colors */
+:root{
+    --primary: #ECB365; /*#FABB51; #3DCFD3;*/
+    --dark: #3E8E7E;       /*#161616;*/
+    --pure:#FFFFFF;
+    --light:#F2F2F2;
+    --ternary:#898989;
+}
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0 , 100% 0 , 100% 100%, 70% 87% , 0 97%);
+}
+
+/* Aligning the header contents */
+
+.container{
+    max-width:1152px;
+    padding: 0 15px;
+    margin:0 auto;
+}
+
+header nav .first a {
+    color: var(--pure);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+}
+
+header nav .first a:hover{
+    color:var(--primary);
+}
+
+header nav{
+    padding:2rem 0;
+}
+
+header nav .brand-logo{
+    margin-right: 3rem;
+}
+
+h4{
+    color:var(--pure);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    margin:1.2rem 0;
+}
+
+p{
+    color: var(--pure);
+    font-size: 1.2rem;
+    margin:1rem 0rem; 
+}
+
+h4,h1{
+    color:var(--pure);
+}
+
+span{
+    color: var(--primary);
+}
+
+.profile{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.profile img{
+    width:300px;
+    height: 500px;
+    margin:0 2rem;
+    padding: 0 3rem;
+}
+
+.profile p{
+    color:var(--pure);
+}
+
+section{
+    padding:6rem 0rem;
+    padding-bottom: 7rem;
+}
+
+section .first img{
+    width: 480px;
+    height:500px;
+}
+
+section h4, p{
+    color:var(--dark);
+    line-height: 1.9rem;
+}
+
+section .social a:hover{
+background-color: var(--primary);
+transition: all 0.3s ease;
+}
+
+.section-heading{
+    text-align: center;
+    line-height: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+/* '+' is for selecting the next element after the particular class */
+
+.projects{
+    background-color: var(--light);
+    padding:6rem 0rem;
+}
+
+.projects .section-heading + p{   
+    color:var(--ternary);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+
+.card-heading{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 2rem;
+  grid-row-gap:4rem;
+}
+
+.cards{
+    background-color: var(--pure);
+    padding:3rem;
+    position: relative;
+    text-align: center;
+}
+
+
+.icon-image{
+    height:3rem;
+    width:3rem;
+    position: absolute;
+    top:-5.5%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+.icon-image + p{
+    color:var(--ternary);
+}
+
+.contact{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url("/images/contactbg.jpg");
+    text-align: center;
+    clip-path: polygon(0 0 , 100% 0 , 100% 100%, 70% 84% , 0 97%);
+}
+
+.contact p{
+    color: var(--pure);
+    margin: 2rem 0rem;
+}
+
+.contact button{
+    margin: 2rem 0;
+}
+
+.feedback-heading , .feedback-heading+p{
+    text-align: center;
+}
+
+.slider img+p{
+    text-align: center;
+    padding:0 18rem;
+}
+
+.slider .slide img{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;  /* Image fits in the box accurately , prevents stretching of image */
+    margin-bottom: 2rem;
+}
+
+.slider .slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.feedback .dots{
+    display: flex !important; /* important is used to force the slider effect*/
+    list-style: none;
+    justify-content: center;
+    margin:3rem 0rem;
+}
+
+.feedback .dots button{
+    margin-right:0.3rem;
+    font-size: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    background: var(--primary);
+}
+
+ /* class for selecting currently active carousel */
+.feedback .dots li.slick-active button{
+    background:var(--ternary);
+    width: 1.5rem;
+}
+
+.reach-me{
+    background-color: var(--light);
+    margin: -5rem 0;
+  
+}
+.reach-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.reach-heading {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.reach-heading+p{
+    text-align: center;
+}
+
+ .reach{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.reach img{
+    width: 4rem;
+}
+
+.input-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:0.5rem;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    grid-gap:0.5rem;
+    padding-top:0.5rem;
+}
+
+.form-body{
+    text-align: center;
+}
+
+input, textarea{
+    font-size: 1rem;
+    padding:0.5rem;
+    margin: 0.3rem;
+}
+
+.contact-form{
+    text-align: center;
+}
+
+.contact-form button{
+    margin-top:3rem;
+    font-weight: 1000;
+}
+
+.footer{
+    background-color: var(--dark);
+}
+
+.footer-social{
+    display:flex;
+    justify-content:center;
+}
+
+.footer-social .fa{
+    font-size: 50px;
+    width: 3rem;
+
+}
+
+.footer-social a{
+    margin:0rem 3rem;
+    margin-top: 3rem;
+}
+
+.footer-social a:hover{
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.footer h1{
+    text-align: center;
+}
+.footer .credit{
+   
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.footer{
+    margin-top :2rem;
+    height: 15rem;
+}
+
+.menu-icon img{
+    width:2rem;
+}
+
+ /* Making mobile navigation */
+
+.main-wrapper{
+    position: relative;
+}
+
+.menu-icon{
+    position: absolute;
+    top:40px;
+    right:40px;
+    z-index: 11;
+    background:none;
+    border:none;
+    cursor: pointer;
+    display: none;
+}
+
+.close-button img{
+    width: 2rem;
+}
+
+.close-button{
+    position:fixed;
+    top:30px;
+    right:150px; 
+    border:none;
+    background: none;
+    cursor: pointer;
+}
+
+.mobile-nav{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background:var(--light);
+    width: 100%;
+    height: 100%;
+    padding:3rem;
+    padding-top:5rem;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.mobile-nav ul{
+    list-style: none;
+}
+
+.mobile-nav ul li{
+    padding: 0.5rem;   
+}
+.mobile-nav ul li a{
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+/* Making website responsive */
+/* tablet breakpoint */
+@media (max-width:1052px){
+    #nav-bar{
+        display: none;
+    }
+    
+    .menu-icon{
+        display:block ;
+    }
+    
+    .profile img{
+        width:223px;
+        height: 386px;
+    }
+
+    .profile{
+        padding-bottom:5rem ;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+    header {
+        clip-path: polygon(0 0 , 100% 0 , 100% 100%, 46% 89% , 0 97%);
+    }
+
+    .inner-wrap{
+        flex-direction: column;
+    }
+    
+    section .first img{
+        width: 375px;
+        height: 344px;
+        margin-bottom: 3rem;
+    }
+
+    .social, .about-align{
+        text-align: center;
+    }
+
+    section{
+        padding: 3rem 0;
+        padding-bottom: 4rem;
+    }
+
+    .wrapper{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 2rem;
+        grid-column-gap: 1rem;
+    }
+
+    .projects{
+        padding: 4rem 0rem;
+    }
+
+    .contact button{
+        margin-bottom: 5rem;
+    }
+
+    .slider img+p{
+        padding:0 12rem;
+    }
+
+    .reach img{
+        width: 3rem;
+    }
+
+    .about-para{
+        padding: 0 7rem;
+    }
+
+    .footer .credit{
+        margin-top: 3rem;
+    }
+
+}
+
+/* phone breakpoint */
+@media (max-width:776px){
+    .profile-img{
+        width: 180px;
+        height: 300px;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .btn-secondary{
+        margin-bottom:3rem;
+    }
+    header{
+        clip-path: polygon(0 0 , 100% 0 , 100% 100%, 66% 92% , 0 97%);
+    }
+    /* .container{
+        padding: 0 20px;
+    } */
+
+    section .first img{
+        width:270px;
+        height: 280px;
+    }
+
+    .about-para{
+        padding: 0 0rem;
+    }
+
+    .wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .slider img+p{
+        padding: 0 3rem;
+    }
+
+    .contact{
+        clip-path: polygon(0 0 , 100% 0 , 100% 100%, 36% 86% , 0 97%);
+    }
+
+    .reach-heading{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .reach-img{
+        width: 2.5rem;
+    }
+
+    .reach-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .input-wrapper{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer-social a{
+        display: flex;
+        justify-content: center;
+        margin:0 1rem;
+        padding-top:3rem;
+    }
+
+    .fa{
+        padding:25px;
+    }
+    }
+
+

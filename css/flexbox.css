@@ -1,0 +1,73 @@
+/* File for flexbox */
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.8rem 2rem;
+    border: 2px solid transparent;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    color:var(--dark);
+    background-color: var(--primary);
+}
+
+.btn-primary:hover{
+    background-color: var(--dark);
+    border-color: var(--primary);
+    color: var(--primary);
+    transition: all 0.3s ease; /* Smoothen hover */
+}
+
+.btn-secondary{
+    border:2px solid;
+    border-color: var(--primary);
+    background-color: var(--dark);
+    color:var(--primary);
+}
+
+.btn-secondary:hover{
+    background-color: var(--primary);
+    color:var(--dark);
+    transition: all 0.3s ease;
+}
+
+.flex-1{
+    flex:1;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: var(--dark);
+    color:var(--pure);
+    margin-top: 4rem;
+  }
+
+  nav{
+      position: fixed;
+      top:0;
+  }
+  
