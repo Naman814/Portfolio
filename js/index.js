@@ -7,6 +7,10 @@ $(document).ready(function(){
       appendDots:('.slider-dots'),
       dotsClass:'dots'
     });
+    
+  });
+
+  
 
     // Mobile Nav
 
@@ -16,13 +20,13 @@ $(document).ready(function(){
 
     menuIcon.addEventListener('click' , function(){
       mobileNav.classList.add('open');
-    })
+    });
 
     closeButton.addEventListener('click', function(){
         mobileNav.classList.remove('open');
-    })
+    });
 
-  });
+
 
   // setting email 
 
